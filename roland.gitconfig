@@ -1,0 +1,66 @@
+[color]
+ diff = auto
+ interactive = auto
+ status = auto
+ branch = auto
+ ui = true
+[user]
+ name = Roland Hybelius
+ email = roland.hybelius@klarna.com
+[push]
+ # 'git push' should only push to the current branch, not all
+ default = current
+[merge]
+ tool = vimdiff
+[alias]
+ glog  = log --graph --abbrev-commit --pretty=oneline
+ lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+ lola = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+
+ # Called from the top-level dir. Pull from git://HOST/.
+ serv  = daemon --reuseaddr --verbose  --base-path=. --export-all ./.git 
+ st    = status 
+ ci    = commit
+ br    = branch
+ co    = checkout
+ ft    = fetch
+ df    = diff --ignore-submodules
+ dfc   = diff --ignore-submodules --check
+ lg    = log -p
+ rlog  = !git_remote_log
+ rlg   = !git_remote_log -p
+ # all new commits after you fetched, with stats, but excluding merges
+ lc    = log ORIG_HEAD.. --stat --no-merges
+ in    = log HEAD..origin/master
+ out   = log origin/master..HEAD
+ # Recall that the commit which will be committed after we resolve this conflict
+ # will have two parents instead of the usual one: one parent will be HEAD, the
+ # tip of the current branch; the other will be the tip of the other branch, 
+ # which is stored temporarily in MERGE_HEAD.
+ gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+ # "pull" or "merge" leaves the original tip of the current branch in ORIG_HEAD.
+ # Hence, to see what a merge brought in, use the mdiff alias:
+ mdiff = !gitk --left-right HEAD...ORIG_HEAD
+ # Remove a file from the index: git unstage <file>
+ unstage = reset HEAD --
+ last = log -1 HEAD
+ wc = whatchanged
+ search = !git_search
+ whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -" 
+ who = "!git shortlog -s -- | sort -n -k1" 
+ aliases = "!git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'"
+ swap = checkout "@{-1}"
+ sort = !git_sort_branch
+ lb   = !git_local_branches
+ lastsync = !git_last_sync
+ fst = !git fetch && echo && git st
+        mdelete = !git_mdelete
+ tr = !git_tracked
+ ignored = !git ls-files -o -i --exclude-standard
+ lignored = !git ls-files -o -i --exclude-per-directory=.gitignore
+[core]
+ # global per user gitignore file
+ excludesfile = "~/.gitignore"
+ editor = vim
+
