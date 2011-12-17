@@ -1,0 +1,17 @@
+cd cocos2d-labb/install
+sudo sh setuptools-0.6c11-py2.7.egg
+unzip cocos2d-0.5.0.zip
+mkdir cocos2d-0.5.0
+sudo python setup.py install
+
+#(
+#	All of cocos should be usable now, with the possible exceptions
+#	
+#	        cocos particles
+#	        SDL audio backend
+#	        AVBin (pyglet) audio-video backend
+#)
+
+*** Kör hello world ***
+cd ../cocos2d-labb/test
+python hello_world.py
