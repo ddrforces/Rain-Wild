@@ -1,0 +1,130 @@
+Swords
+shields
+castle
+forest
+rain
+mud
+mud monsters
+fire monsters
+corpses
+sage
+droska
+dragons
+air combat
+pegauses
+jet pack
+helmet
+goggles
+propeller planes
+machine guns
+explosions
+parachute
+unknown city
+horror sounds
+hunted
+crossbows
+traps
+loot
+npcs
+potions
+learning
+weapon profichency
+skill tree
+weapon skills
+difficulty levels
+leveling systems
+stats depending on what you do
+spells
+artifacts
+ghlyps
+single player story
+shops
+currency
+robbing
+rewards
+dungeouns
+punishment
+prison
+zombies
+mutated humans
+apocalyptic enviroments
+stun rod
+underground city
+heavinly oasis
+tits
+booty
+treasures
+quest board
+guild
+mongo gubbar som inte går döda direkt
+movement patterns
+situational sword fights
+life steal/naitive generation
+wood elfs
+peaches
+peach tree
+wizard
+generation
+level design (by character)
+alternitave life for monsters
+alternitave movement for monsters
+blood
+wounds
+slow recovery patches
+a cool save feature
+fairy
+character based skills
+familiars
+skill tree depending on character
+flowers
+alchamy
+weed
+mixing
+black smith
+tools items
+inventory
+recepies
+imbue weapons
+imbue during combat
+destructible enviroment
+back pack
+storage/stash
+friendly npcs / allies
+cut scenes
+cut scenes that changes enviroment
+voice actors
+music
+epic sound effects
+epic introduction scenes to new levels
+a bar
+booze
+a drunkard
+elder tree
+minerals
+gas
+trading
+shotgun
+preventing farming
+random maps
+balance
+areas accesible by skill level
+monsters level up with you
+someone to save
+story based on character
+one grand map
+huge story plot change
+traitors
+potraits of character in cut scenes (talk bubbles)
+moving world
+gigantic monsters
+optional/sand box enviroment
+puzzles
+mini games
+world map, collecting parts
+explorable sub-maps
+hidden rooms / secrets
+dynamite
+club
+shovle
+a great catastrophy
+a bunker
